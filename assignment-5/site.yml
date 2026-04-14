@@ -1,0 +1,12 @@
+---
+- name: Install Java on test nodes
+  hosts: test
+  become: yes
+  roles:
+    - java_role
+
+- name: Install MySQL on prod nodes
+  hosts: prod
+  become: yes
+  roles:
+    - mysql_role
