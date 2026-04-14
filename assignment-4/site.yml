@@ -1,0 +1,6 @@
+---
+- name: Deploy Nginx with custom index
+  hosts: mysql
+  become: yes
+  roles:
+    - nginx_role
